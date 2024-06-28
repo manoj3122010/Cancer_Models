@@ -28,7 +28,7 @@ Performance metrics such as precision, recall, and F1-score are calculated for e
 ## Results
 The accuracy of each model is printed, and a comparison of their performance metrics is visualized using a bar plot.
 
-Random Forest Accuracy: rf_accuracy
+- Random Forest Accuracy: rf_accuracy
 SVM Accuracy: svm_accuracy
 Neural Network Accuracy: nn_accuracy
 Performance metrics for precision, recall, and F1-score are plotted for each model.
