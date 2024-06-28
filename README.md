@@ -7,22 +7,22 @@ Gene expression data for various cancer types is obtained from a publicly availa
 The data is downloaded and extracted programmatically using the requests and zipfile libraries.
 
 ## Data Preprocessing
-**Loading Data:** Gene expression data for Breast, Colon, GBM, and Lung cancers is loaded from text files into pandas DataFrames.
-**Filtering Common Genes:** Only genes common to all four types of cancer are retained for analysis.
-**Combining Data:** Gene expression data is combined into a single DataFrame, with an additional column indicating the type of cancer.
-**Splitting Data:** The combined data is split into training and testing sets.
-**Scaling Data:** Feature scaling is performed using StandardScaler.
+- **Loading Data:** Gene expression data for Breast, Colon, GBM, and Lung cancers is loaded from text files into pandas DataFrames.
+- **Filtering Common Genes:** Only genes common to all four types of cancer are retained for analysis.
+- **Combining Data:** Gene expression data is combined into a single DataFrame, with an additional column indicating the type of cancer.
+- **Splitting Data:** The combined data is split into training and testing sets.
+- **Scaling Data:** Feature scaling is performed using StandardScaler.
 
 ## Model Training and Evaluation
 Three machine learning models are trained and evaluated:
 
-**Random Forest:**
+- **Random Forest:**
 A Random Forest Classifier is trained on the gene expression data.
 Model accuracy is evaluated on the test set.
-**Support Vector Machine (SVM):**
+- **Support Vector Machine (SVM):**
 An SVM with a linear kernel is trained on the scaled data.
 Model accuracy is evaluated on the test set.
-**Neural Network (MLP):**
+- **Neural Network (MLP):**
 A Multi-Layer Perceptron (MLP) classifier is trained on the scaled data.
 Model accuracy is evaluated on the test set.
 Performance metrics such as precision, recall, and F1-score are calculated for each model.
